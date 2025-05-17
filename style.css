@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container principal */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* Título e parágrafo */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+}
+
+p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* Labels e selects */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    font-size: 1rem;
+}
+
+/* Botão de resultado */
+button.resultado {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.resultado:hover {
+    background-color: #45a049;
+}
+
+.resultado-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    select {
+        font-size: 0.95rem;
+    }
+
+    button.resultado {
+        width: 100%;
+    }
+}

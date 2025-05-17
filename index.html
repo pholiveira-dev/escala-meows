@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala de Meows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escala de Meows</h1>
+    <p>A escala MEOWS (Modified Early Obstetric Warning Score) é uma ferramenta de rastreio de morbidade materna, utilizada para identificar e avaliar o risco de deterioração clínica em pacientes obstétricas. É uma escala de alerta que se baseia na pontuação de parâmetros vitais e fisiológicos, com o objetivo de identificar precocemente o risco de complicações.</p>
+
+    <form action="/" id="formulario" method="post">
+
+        <label for="temperatura">Temperatura: </label>
+        <select name="temperatura" id="temperatura">
+            <option value="3">≤ 36ºC</option>
+            <option value="0">36.1 - 37.2ºC</option>
+            <option value="2">37.3 - 37.7ºC</option>
+            <option value="2">37.7</option>
+        </select> 
+
+        <p></p>
+
+        <label for="pas">PAS (mmHg): </label>
+        <select name="pas" id="pas">
+            <option value="3"> < 90 </option>
+            <option value="0"> 90 - 140</option>
+            <option value="1">141 - 150</option>
+            <option value="2">151 - 160</option>
+            <option value="2"> > 180 </option>
+        </select>
+
+        <p></p>
+
+        <label for="pad">PAD (mmHg): </label>
+        <select name="pad" id="pad">
+            <option value="0">60 - 90</option>
+            <option value="1">91 - 100</option>
+            <option value="2">101 - 110</option>
+            <option value="2">> 110</option>
+        </select>
+
+        <p></p>
+
+        <label for="fc">FC (bpm): </label>
+        <select name="fc" id="fc">
+            <option value="3">< 50</option>
+            <option value="2">50 - 60</option>
+            <option value="0">61 - 100</option>
+            <option value="1">101 - 110</option>
+            <option value="2">111 - 120</option>
+            <option value="2">> 120</option>
+        </select>
+
+        <p></p>
+
+        <label for="fr">FR (bpm): </label>
+        <select name="fr" id="fr">
+            <option value="3">< 12</option>
+            <option value="0">12 - 20</option>
+            <option value="2">21 - 25</option>
+            <option value="2"> > 25</option>
+        </select>
+
+        <p></p>
+
+        <label for="sato2">Saturação O² %: </label>
+        <select name="sato2" id="sato2">
+            <option value="3">< 92</option>
+            <option value="2">92 - 95</option>
+            <option value="0">> 95</option>
+        </select>
+
+        <p></p>
+
+        <label for="dor">Dor (Score*): </label>
+        <select name="dor" id="dor">
+            <option value="0">Normal</option>
+            <option value="2">Anormal</option>
+        </select>
+
+        <p></p>
+
+        <label for="consciencia">Nível de consciência: </label>
+        <select name="consciencia" id="consciencia">
+            <option value="3">Resposta ao estímulo doloroso ou insconsciente</option>
+            <option value="1">Respsota verbal</option>
+            <option value="0">Alerta</option>
+        </select>
+
+        <p></p>
+
+        <label for="loquios">Lóquios: </label>
+        <select name="loquios" id="loquios">
+            <option value="0">Normal</option>
+            <option value="2">Anormal</option>
+        </select>
+        <p></p>
+        <button type="button" class="resultado">Resultado</button>
+        <div id="resultado" class="resultado-box"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
